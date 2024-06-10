@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP - Object Oriented Programming</title>
+</head>
+
+<body>
+    <h1>OOP - Object Oriented Programming</h1>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+    <form>
+        <div>
+            <label for="myName"></label>
+            <input type="text" id="myName" required>
+        </div>
+        <div>
+            <label for="mySurname"></label>
+            <input type="text" id="mySurname" required>
+        </div>
+
+        <button type="submit">invia</button>
+    </form>
+
+    <!-- <script src="./objects.js"></script> -->
+    <!-- <script src="./constructor-functions.js"></script> -->
+    <!-- <script src="./classes.js"></script> -->
+    <script src="./classes-static-methods.js"></script>
+
+    <script>
+        const form = document.querySelector("form")
+
+        form.onsubmit = function (e) {
+
+            // importantissimo il preventDefault per evitare il refresh della pagina!
+            e.preventDefault()
+
+            // sotto ad esso possiamo creare la nostra logica
+
+            console.log("Submit")
+            form.reset() // eventualmente alla fine possiamo resettare i campi
+        }
+
+        // metodo alternativo per l'applicazione dell'evento submit
+        // form.addEventListener("submit", function(){}) 
+    </script>
+</body>
+
+</html>
